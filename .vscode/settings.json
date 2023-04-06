@@ -1,0 +1,12 @@
+{
+  "emmet.showSuggestionsAsSnippets": false,
+  "emmet.triggerExpansionOnTab": true,
+  "tailwindCSS.emmetCompletions": true,
+  "emmet.optimizeStylesheetParsing": false,
+  "emmet.includeLanguages": {
+    "javascipt": "javascriptreact"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "html.format.extraLiners": "head, body, /html"
+}
