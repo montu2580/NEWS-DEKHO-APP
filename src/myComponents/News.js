@@ -139,7 +139,7 @@ export default function News(props) {
               {/* jb aap .map use krte ho or element ko ittrate krte ho tb hr ek element ko ek uniqe key deni padthi h   */}
 
               {/* {articles.map((element) => { console.log(element);})} */}
-              {articles.map((element) => {
+              {articles?.map((element) => {
                 // key yha di bcz hum ek div return kr rhe h
                 return (
                   <div
