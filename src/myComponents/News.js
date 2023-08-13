@@ -176,7 +176,7 @@ News.defaultProps = {
   category: "general",
 };
 
-News.propTypos = {
+News.propTypes = {
   // static PropTypes = {
   country: PropTypes.string,
   pageSize: PropTypes.number,
