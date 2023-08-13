@@ -70,8 +70,8 @@ export default function News(props) {
     let parsedData = await data.json();
     // console.log(parsedData);
     props.setProgress(75);
-    setarticles(parsedData.articles);
-    setTotalResults(parsedData.totalResults);
+    setarticles(parsedData?.articles);
+    setTotalResults(parsedData?.totalResults);
     setLoding(false);
 
     props.setProgress(100);
@@ -106,7 +106,7 @@ export default function News(props) {
     let data = await fetch(url); //promise
     let parsedData = await data.json();
     // console.log(parsedData);
-    setarticles(articles.concat(parsedData.articles));
+    setarticles(articles?.concat(parsedData?.articles));
     setTotalResults(parsedData.totalResults);
   };
 
@@ -128,9 +128,9 @@ export default function News(props) {
         <div className="flex justify-center">{loading && <Spinner />}</div>
 
         <InfiniteScroll
-          dataLength={articles.length}
+          dataLength={articles?.length}
           next={fetchMoreData}
-          hasMore={articles.length !== totalResults}
+          hasMore={articles?.length !== totalResults}
           loader={<Spinner />}
         >
           <div className="container">
