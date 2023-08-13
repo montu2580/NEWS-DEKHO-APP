@@ -66,12 +66,7 @@ export default function News(props) {
     setLoding(true);
     props.setProgress(50);
 
-    let data = await fetch(url); //promise
-    let data = await fetch(url, {
-        method: 'GET',
-        headers: headers
-    });
-    
+    let data = await fetch(url); //promise  
     let parsedData = await data.json();
     // console.log(parsedData);
     props.setProgress(75);
